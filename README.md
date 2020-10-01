@@ -7,12 +7,19 @@ ADDITONAL PROJECT: [Mask Detection and Classification \[Code and Demo\]](https:/
 # 
 In a world recovering from the shock of COVID-19, it has become increasingly important to practice social distancing. A deep understanding of the pandemic shows how one person's negligence can cause widespread harm which will be hard to negate. So, using Computer Vision and Deep Learning might help monitor the practice of social distancing. 
 
+Nowadays, social distancing along with other basic sanitary mesures are very important to keep the spread of the Covid-19 as slow as possible. But this project is only a proof of concept and was not made to be use to monitor social distancing in public or private areas because of ethical and privacy issues
+
+Using a faster model in order to perform real-time social distancing analysis.
+Use a model more robust to occlusions.
+Automatic calibration is a very well known problem in Computer vision and could improve a lot the bird eye view transformation on different scenes.
+
 The application detects people who are close by and not adhering to the distancing norms and marks them in RED bounding boxes, signifying risk. Others, are in GREEN.
 
 The Dashboard at the right, gives a visual representation of the data.
 The number next to the GREEN and RED icons are the number of SAFE and RISK people. Whereas, the BLACK is the total number of people in the frame. 
 
 The Pie Chart at the top just plots the SAFE vs AT RISK persons in the frame. 
+
 
 ### Here is a demo containing the application output: 
 
@@ -28,6 +35,12 @@ Click to go to the Youtube Video
 The entire application is encapsulated in the SocialDistanceDashboard.py file, which can be run using the command:
 
     python3 socialDistanceDashboard.py
+
+### Pre-Requisitos
+- Python3
+- yolov3.cfg
+- coco.names
+- yolov3.weights
 
 #### Input file:
 The input can be a video file and needs to be updated on line number 198:
